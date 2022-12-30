@@ -1,5 +1,7 @@
 # This repo exists to illustrate a bug
 
+The open issue is being tracked [here](https://github.com/testing-library/svelte-testing-library/issues/190)
+
 When async tests throw an exception, the `screen` container provided by svelte-testing-library doesn't get cleaned up.
 
 Steps to Reproduce: (i am using node 18.12.1)
