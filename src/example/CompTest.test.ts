@@ -24,8 +24,8 @@ it('is triggered by async tests failing', async () => {
 })
 
 it('sees many buttons', async () => {
-    render(Comp, {name: 'World', values: []});
-    const button = screen.getByRole('button');
+    const { container } = render(Comp, {name: 'World', values: [], testid: "test2"});
+    const button = container.querySelector('#test2 button');
 
     // Using await when firing events is unique to the svelte testing library because
     // we have to wait for the next `tick` so that Svelte flushes all pending state changes.
